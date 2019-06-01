@@ -1,0 +1,20 @@
+{
+  "name": "@rveloz/list-rank",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rick Veloz <rickvelozdev@gmail.com> (http://www.rickvelozdev.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  }
+}
