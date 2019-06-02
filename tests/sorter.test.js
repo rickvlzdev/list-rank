@@ -16,4 +16,16 @@ describe('Test sorter function', () => {
     const results = sorter(data.input);
     expect(results).toEqual(data.output);
   });
+  test('Returns an array of objects with subject string and match position if showAll (second) argument is true', () => {
+    const results = sorter(data.input, true);
+    expect(results.every((result) => {
+      const hasSubjectStringProp = typeof result.subject === 'string';
+      const hasPositionNumberProp = typeof result.position === 'number';
+      return hasSubjectStringProp && hasPositionNumberProp;
+    })).toBe(true);
+  });
+  test('Returns array ordered by position property, starting with the smallest index', () => {
+    const results = sorter(data.input, true);
+    expect(results).toEqual(data.completeOutput);
+  });
 });

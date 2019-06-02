@@ -38,6 +38,31 @@ Output should be:
 ]
 ```
 
+If the last argument is true:
+
+```
+  const orderedList = listRank(query, list, true);
+```
+
+Output should be:
+
+```
+[
+  {
+    subject: "Fundamental",
+    position: 0,
+  },
+  {
+    subject: "A fundraiser for church",
+    position: 2,
+  },
+  {
+    subject: "He's pretty funny",
+    position: 12,
+  },
+];
+```
+
 ## Tests
 
   `npm test`
