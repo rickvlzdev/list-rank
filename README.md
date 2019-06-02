@@ -1,6 +1,6 @@
 # List Rank
 
-A small library that orders a list of strings based on how early the query string appears in the strings.
+A small library that orders a list of strings based on how early the query string appears in a string.
 
 ## Installation
 
@@ -25,7 +25,7 @@ const orderedList = listRank(query, list);
 
 ```
 
-Output should be
+Output should be:
 
 ```
 [
