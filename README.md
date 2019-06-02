@@ -8,27 +8,32 @@ A small library that orders a list of strings based on how early the query strin
 
 ## Usage
 
-  const listRank = require("@rveloz/list-rank");
+```
+const listRank = require("@rveloz/list-rank");
 
-  const query = "fun";
+const query = "fun";
 
-  const list = [
-    "Goodbye",
-    "Fundamental",
-    "I'm from Chicago",
-    "He's pretty funny",
-    "A fundraiser for church",
-  ];
+const list = [
+  "Goodbye",
+  "Fundamental",
+  "I'm from Chicago",
+  "He's pretty funny",
+  "A fundraiser for church",
+];
 
-  const orderedList = listRank(query, list);
+const orderedList = listRank(query, list);
+
+```
 
 Output should be
 
-  [
-    "Fundamental",
-    "A fundraiser for church",
-    "He's pretty funny",
-  ]
+```
+[
+  "Fundamental",
+  "A fundraiser for church",
+  "He's pretty funny",
+]
+```
 
 ## Tests
 
