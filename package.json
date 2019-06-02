@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "cover": "node_modules/jest/bin/jest.js --coverage"
   },
   "author": "Rick Veloz <rickvelozdev@gmail.com> (http://www.rickvelozdev.com)",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "^3.0.3",
+    "istanbul": "^0.4.5",
     "jest": "^24.8.0"
   },
   "jest": {
@@ -16,5 +19,9 @@
   },
   "engines": {
     "node": ">= 6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickvlzdev/list-rank"
   }
 }
